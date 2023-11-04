@@ -117,6 +117,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+ROOT_URLCONF = 'core.urls'
+
 # Internationalization
 # Se quiser deixar em PT BR
 LANGUAGE_CODE = 'pt-br'
