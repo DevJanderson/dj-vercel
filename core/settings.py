@@ -21,7 +21,7 @@ sys.path.insert(0, APPS_DIR)
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 #----------------------------------------------------
 
 ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost']
