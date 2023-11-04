@@ -21,7 +21,7 @@ sys.path.insert(0, APPS_DIR)
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG")
+DEBUG = True
 #----------------------------------------------------
 
 ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost']
@@ -51,8 +51,6 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_APPS + PROJECT_APPS
 #----------------------------------------------------
 
 
-
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -63,7 +61,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'core.urls'
+# ROOT_URLCONF = 'core.urls'
 
 TEMPLATES = [
     {
