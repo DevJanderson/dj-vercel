@@ -61,6 +61,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+ROOT_URLCONF = 'core.urls'
+
 
 TEMPLATES = [
     {
@@ -78,7 +80,7 @@ TEMPLATES = [
     },
 ]
 
-# WSGI_APPLICATION = 'core.wsgi.application'
+WSGI_APPLICATION = 'core.wsgi.application'
 
 
 # Database
@@ -114,7 +116,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-ROOT_URLCONF = 'core.urls'
 
 # Internationalization
 # Se quiser deixar em PT BR
